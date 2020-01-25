@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <title>Image Processing</title>
 </head>
 <body>
@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
             .done(function(data) {
                 // Show formatted JSON on webpage.
                 $("#responseTextArea").val(JSON.stringify(data, null, 2));
-                $("#description").text(data.description.captions[0].text);
+            
             })
      
             .fail(function(jqXHR, textStatus, errorThrown) {
@@ -99,7 +99,7 @@ if (isset($_POST['submit'])) {
                 Response:
                 <br><br>
                 <textarea id="responseTextArea" class="UIInput"
-                          style="width:580px; height:400px;" readonly=""></textarea>
+                          style="width:580px; height:400px;"></textarea>
             </div>
             <div id="imageDiv" style="width:420px; display:table-cell;">
                 Source image:
